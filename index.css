@@ -105,13 +105,34 @@ body {
   }
 }
 
+/* phones landscape */
+@media (min-width: 0) and (max-height: 500px) {
+  .window {
+    width: 60% !important;
+  }
+
+  .nav-bar {
+    height: 6vh;
+  }
+
+  .nav-bar-icons {
+    width: 12%;
+  }
+
+  .code,
+  .cursor {
+    font-size: 1rem !important;
+    line-height: 1.2rem !important;
+  }
+}
+
+/* phones */
 @media (min-width: 0px) and (max-width: 576px) {
   .window {
     width: 90%;
   }
 
   .nav-bar-icons {
-    left: 10px;
     width: 15%;
   }
 
@@ -120,13 +141,14 @@ body {
     height: 10px;
   }
 
-  #code,
+  .code,
   .cursor {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
+/* tablet */
 @media (min-width: 577px) and (max-width: 1025px) {
   .window {
     width: 60%;
@@ -135,5 +157,12 @@ body {
   #code,
   .cursor {
     font-size: 1.4rem;
+  }
+}
+
+/* xl desktop */
+@media (min-width: 1400px) {
+  .window {
+    width: 35%;
   }
 }
